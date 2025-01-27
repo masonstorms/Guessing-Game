@@ -8,20 +8,22 @@ function GuessingGame() {
   const [guess,setGuess] = useState('');
   const [message,setMessage] = useState('');
   const [guessedRight,setGuessedRight] = useState(false)
+  const [guesses,setGuesses] = useState(1)
   const handleGuessChange = (event) =>{
     setGuess(event.target.value);
   };
   const handleGuessSubmit = ()=>{
     const userGuess = parseInt(guess);
+    setGuesses(guesses + 1);
     if (userGuess === randomNumber){
-      setMessage("You guessed the number correctly!");
+      setMessage(`You guessed the number correctly! It took ${guesses} tries!`);
       setGuessedRight(true)
      } 
      else if(userGuess<randomNumber){
-      setMessage("You guessed too low!");
+      setMessage(`You guessed too low! You have guessed ${guesses} times!`);
      }
      else if(userGuess>randomNumber){
-      setMessage("You guessed too high!");
+      setMessage(`You guessed too high! You have guessed ${guesses} times!`);
      }
      else{
       setMessage("Hmmm something isn't quite right.")
@@ -32,6 +34,7 @@ function GuessingGame() {
     setGuess('');
     setMessage('');
     setGuessedRight(false);
+    setGuesses(0);
   };
   return (
     <div>
