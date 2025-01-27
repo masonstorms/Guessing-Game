@@ -1,8 +1,2 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/a960ede0-48e5-4481-a05c-159bf9979765)
+<A simple react project built from vite template using JSX and CSS. Game generates a random number between 1-100. Game accepts user input for the guess and determines if it is correct, too high, or too low and gives that inforamtion to the player. <b>Functional and interactive user interface. Basic game logic and game state management. Event handling, user input.
